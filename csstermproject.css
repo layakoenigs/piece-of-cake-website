@@ -1,0 +1,223 @@
+/*whole body of html page*/
+body{
+  background-color: white;
+  font-family: Gadugi;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/*navigation bar on each page*/
+.top{
+  display: grid;
+  width: 100%;
+  height: 60px;
+  grid-template-columns: repeat(7,1fr);
+  background-color: whitesmoke;
+  align-content: center;
+  text-align: center;
+  margin: 0px;
+  font-size: 125%;
+}
+
+/*hover over the logo*/
+.pie:hover{
+  text-decoration: underline;
+}
+
+/*navigation bar: logo on right*/
+.top2{
+  grid-column: 1/4;
+  font-size: 180%;
+  text-align: center;
+  color: #333333;
+}
+
+/*navigation bar: sub tabs on left*/
+.header2{
+  align-content: center;
+  color: #333333;
+}
+
+/*grid for the 4 main pages*/
+.pages{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/*website paragraphs*/
+.beginner{
+  font-size: 110%;
+  text-align: left;
+  padding: 15px;
+  color: #333333;
+}
+
+/*few words inside paragraph*/
+.unique{
+  font-size: 130%;
+  font-weight: bold;
+}
+
+/*header tabs*/
+.about{
+  display: inline-block;
+  text-align: left;
+  padding: 15px;
+  color: white;
+  background-color: #333333;
+  border-radius: 15px;
+  font-size: 250%;
+}
+
+/*4 main pages tabs*/
+.main{
+  background-color: whitesmoke;
+  margin: 5px;
+  padding: 10px;
+  font-size: 200%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px; 
+}
+
+/*all links in website*/
+a{
+  text-decoration: none;
+  color: #333333;
+}
+
+/*images in the 4 main pages tabs*/
+.image{
+  width: 95%;
+  height: 80%;
+  border-radius: 15px;
+}
+
+/*line across the page*/
+#par{
+  border: 5px solid #333333;
+}
+
+/*reviews grid*/
+.feedback{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #333333;
+  color: white;
+
+}
+
+/*reviews image*/
+.take{
+  width: 100%;
+  height: 100%;
+}
+
+/*reviews div- text (and image div)*/
+.review{
+  align-content: center;
+  padding: 40px;
+}
+
+/*client name on review*/
+.special{
+  font-size: 70%;
+}
+
+/*color of the form*/
+form{
+  color: #333333;
+}
+
+/*grid in the form*/
+fieldset{
+  display: grid;
+  width: 45%;
+  grid-template-columns: 38% 35%;
+}
+
+/*change label and input tags*/
+label, input{
+  margin: 5px;
+}
+
+/*style the form button*/
+button{
+  font-family: Gadugi;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 15px;
+}
+
+/*all links underline when hover*/
+a:hover{
+  text-decoration: underline;
+}
+
+/*bottom box on page*/
+.end{
+  border: 200px solid #333333;
+}
+
+/*change the following if the screen size is smaller*/
+@media only screen and (max-width: 700px){
+
+  /*navigation bar*/
+  .top{
+    display: block;
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  /*grid for the 4 main pages*/
+  .pages{
+    grid-template-columns: 1fr;
+  }
+
+  /*4 main pages tabs*/
+  .main{
+    font-size: 170%;
+  }
+
+  /*images in the 4 main pages tabs*/
+  .image{
+    width: 95%;
+    height: 75%;
+  }
+
+  /*reviews grid*/
+  .feedback{
+    grid-template-columns: repeat(2, 50%);
+    font-size: 65%;
+    width: 100%;
+    height: auto;
+  }
+
+  /*reviews image*/
+  .take{
+    width: 100%;
+    height: 100%;
+  }
+
+  /*pie reviews image*/
+  .piepic{
+    width: 13%;
+  }
+
+  /*grid in the form*/
+  fieldset{
+    width: 90%;
+    grid-template-columns: 40% 30%;
+  }
+
+  /*website paragraphs*/
+  .beginner{
+    font-size: 90%;
+  }
+
+}

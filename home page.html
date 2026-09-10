@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piece of Cake</title>
+    <link href="csstermproject.css" rel="stylesheet" />
+    <script src="website.js" defer></script>
+
+  </head>
+
+  <body>
+
+    <!--Navigation bar as a grid-->
+    <div class="top">
+      <!--Logo (pic with name) for website-->
+      <h2 class="top2 pie">
+        <img src="https://www.shutterstock.com/image-vector/pumpkin-pie-slice-outline-drawing-600nw-2521008339.jpg" height="30px" width="45px" alt="pie">
+        <a href="home page.html" style="text-decoration: none; color:#333333;">Piece of Cake</a>
+      </h2>
+      <!--4 main pages as links-->
+      <!--JS: when hover over color will be changed depending on the page color theme and will change back when hover out-->
+      <a href="Appetizers/appetizers.html" class="header2"><p onmouseover="appetizersPage(this)" onmouseout="fixPage(this)">Appetizers</p></a>
+      <a href="Mains/mains.html" class="header2"><p onmouseover="mainPage(this)" onmouseout="fixPage(this)">Mains</p></a>
+      <a href="Sides/sides.html" class="header2"><p onmouseover="sidesPage(this)" onmouseout="fixPage(this)">Sides</p></a>
+      <a href="Desserts/desserts.html" class="header2"><p  onmouseover="dessertsPage(this)" onmouseout="fixPage(this)">Desserts</p></a>
+
+    </div>
+
+
+    <!--Line across the page-->
+    <p id="par"></p>
+
+
+    <!--Welcome paragraph to the website-->
+    <div class="beginner">
+      <!--node created with Java Script: p tag at end of paragraph when mouse hovers over-->
+      <p id="node" onmouseover="makeNode()">"Welcome to a place where every whisk, every simmer, and every shared meal tells a story. Here, cooking is more than just following steps on a page; it’s about the joy of transforming simple ingredients into moments of connection and comfort. Our kitchen is an open door, inviting you to explore the recipes that have filled our lives with warmth and flavor, from cherished family classics to exciting new culinary adventures. We believe that food has a unique power to bring people together, creating memories that last long after the dishes are done. Join us as we explore the world one plate at a time, sharing the tips, the tales, and the sheer delight found in a home-cooked meal."</p>
+    </div>
+
+
+    <!--Line across the page-->
+    <p id="par"></p>
+
+
+    <!--grid displays the four main pages of the website, 2 by 2-->
+    <div class="pages">
+
+      <!--Appetizers page: picture, header and link that allows user to click and open up the page-->
+      <!--JS: when mouse hovers over there will be a grey border and will leave when mouse goes out-->
+      <div class="main" onmouseover="borderColor(this)" onmouseout="resetBorder(this)">
+        <a href="Appetizers/appetizers.html">
+        <img class="image" src="https://www.thespruceeats.com/thmb/xsDWj5mP57U9zx1laXcBWeScPL8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-puff-pastry-and-mushroom-ricotta-tarts-recipe-7557041-hero-A-4db204654e0a4b2daf33810f4f78b8c1.jpg" alt="appetizers">
+        <h3>Appetizers</h3>
+        </a>
+      </div> 
+
+
+      <!--Main page: picture, header and link that allows user to click and open up the page-->
+      <!--JS: when mouse hovers over there will be a grey border and will leave when mouse goes out-->
+      <div class="main"  onmouseover="borderColor(this)" onmouseout="resetBorder(this)">
+        <a href="Mains/mains.html">
+        <img class="image"  src="https://img.freepik.com/free-photo/grilled-fillet-steak-rustic-meal-wood-generated-by-ai_188544-22196.jpg?semt=ais_hybrid&w=740&q=80" />
+        <h3>Mains</h3>
+        </a>
+      </div>
+
+
+      <!--Sides page: picture, header and link that allows user to click and open up the page-->
+      <!--JS: when mouse hovers over there will be a grey border and will leave when mouse goes out-->
+      <div class="main"  onmouseover="borderColor(this)" onmouseout="resetBorder(this)">
+        <a href="Sides/sides.html"> 
+        <img class="image"  src="https://www.southernliving.com/thmb/lHfCFkqAtGDDzWG5ElRcvdA-xWo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SL_SEO_Batch_33_GarlicParmesanGreenBeans588-f98e09e471c44cbf9205dbbcef84ac01.jpg" />
+        <h3>Sides</h3>
+        </a>
+      </div>
+
+      <!--Dessert page: picture, header and link that allows user to click and open up the page-->
+      <!--JS: when mouse hovers over there will be a grey border and will leave when mouse goes out-->
+      <div class="main"  onmouseover="borderColor(this)" onmouseout="resetBorder(this)">
+        <a href="Desserts/desserts.html">
+        <img class="image" src="https://images3.alphacoders.com/133/thumb-1920-1338868.png" />
+        <h3>Desserts</h3>
+        </a>
+      </div>
+    </div>
+
+
+    <!--Line across the page-->
+    <p id="par"></p>
+
+
+    <!--Header "tab" for about the chef-->
+    <h3 class="about">About the chef</h3>
+
+    <!--Paragraph about the chef--> 
+    <p class="beginner">Crafting a connection through cuisine has always come as naturally to me as breathing. My culinary journey began in my grandmother’s bustling Brooklyn kitchen, where the aroma of cinnamon and simmering sauce taught me the universal language of comfort and community long before I could properly hold a whisk. 
+<br />
+What I discovered there is a simple truth I carry into every recipe I create: cooking shouldn’t be a daunting task. My goal is to break down barriers and show you that baking a perfect, flaky apple tart can be a <br /><span class="unique">Piece of Cake</span>. My passion lies in sharing approachable, tested recipes that empower you to bring joy and nourishment to your own table, inviting you to share in the stories and traditions that make food so much more than sustenance. It’s about building a community, one accessible, delicious recipe at a time.<br /><br /></p>
+    
+
+    <!--Line across the page-->
+    <p id="par"></p>
+
+
+    <!--Header "tab" for reviews-->
+    <h3 class="about">Reviews</h3>
+
+    <!--Grid for reviews-->
+    <div class="feedback">
+
+      <!--Review #1: image and text-->
+      <!--JS: when mouse hovers over and when mouse goes out colors of background and text will change-->
+      <div>
+        <img class="take" src="https://media.istockphoto.com/id/1053017706/photo/lemon-tantalising-chicken-wings-in-square-bowl.jpg?s=612x612&w=0&k=20&c=82c9NDkg-ZTU5SULbGXOY-9e_JOS7g33OpcQaUB4e2w=" />
+      </div>
+
+      <div class="review" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+        <h2 style="font-size: 250%;">
+        <img class="piepic" src="https://www.shutterstock.com/image-vector/pumpkin-pie-slice-outline-drawing-600nw-2521008339.jpg" height="30px" width="45px" alt="pie">
+        Piece of Cake
+        </h2>
+        <p>"Made these for dinner and they were a big hit! Even my 3-year-old, who is a very picky eater, asked for more. Would definetly make again!"<br /><br /><span class="special">-Elaine Huff</span></p>
+      </div>
+    </div><br />
+
+
+
+    <!--Grid for reviews-->
+    <div class="feedback">
+
+      <!--Review #2: image and text-->
+      <!--JS: when mouse hovers over and when mouse goes out colors of background and text will change-->
+      <div class="review" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+        <h2 style="font-size: 250%;">
+        <img class="piepic" src="https://www.shutterstock.com/image-vector/pumpkin-pie-slice-outline-drawing-600nw-2521008339.jpg" height="30px" width="45px" alt="pie">
+        Piece of Cake
+        </h2> 
+        <p>"The picture looks delicious! I haven't made it yet because I'm missing half the ingredients, but I'm giving it 5 stars based on the photo alone."<br /><br /><span class="special">-Jay Klapper</span></p>
+      </div>
+      <div>
+        <img class="take" src="https://health.ucdavis.edu/media-resources/contenthub/post/internet/good-food/2021/09/images-social/squash-corn-social.png" />
+      </div>
+    </div><br />
+
+
+
+    <!--Grid for reviews-->
+    <div class="feedback">
+
+      <!--Review #3: image and text-->
+      <!--JS: when mouse hovers over and when mouse goes out colors of background and text will change-->
+      <div>
+        <img class="take" src="https://akamai.peopleonehealth.com/e2/guid/Honey-Glazed-Salmon/23b004d8-5131-42b9-a4be-99e0884e0230.jpg" />
+      </div>
+      <div class="review" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+        <h2 style="font-size: 250%;">
+        <img class="piepic" src="https://www.shutterstock.com/image-vector/pumpkin-pie-slice-outline-drawing-600nw-2521008339.jpg" height="30px" width="45px" alt="pie">
+        Piece of Cake
+        </h2>
+        <p>"I was so blown away and impressed by the amazing & delicious flavor of the meals... She makes it fun and exciting to eat healthy!"<br /><br /><span class="special">-Lee Bernal</span></p>
+      </div>
+    </div><br />
+
+
+    <!--Grid for reviews-->
+    <div class="feedback">
+
+      <!--Review #4: image and text-->
+      <!--JS: when mouse hovers over and when mouse goes out colors of background and text will change-->
+      <div class="review" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+        <h2 style="font-size: 250%;">
+        <img class="piepic" src="https://www.shutterstock.com/image-vector/pumpkin-pie-slice-outline-drawing-600nw-2521008339.jpg" height="30px" width="45px" alt="pie">
+        Piece of Cake
+        </h2>
+        <p>"Excellent! With the simple instructions, I followed the recipe to the tee. Our family loved it! I will be making this again, this a definite keeper!"<br /><br /><span class="special">-Luisa Smith</span></p>
+      </div>
+      <div>
+        <img class="take" src="https://mealkitcomparison.com/wp-content/uploads/2021/05/135336905_1657314254452018_8576750549026947279_n-1024x684.jpeg" />
+      </div>
+    </div><br />
+
+
+    <!--Grid for reviews-->
+    <div class="feedback">
+
+      <!--Review #5: image and text-->
+      <!--JS: when mouse hovers over and when mouse goes out colors of background and text will change-->
+      <div>
+        <img class="take" src="https://devinedishes.com/wp-content/uploads/2025/11/chicken-stir-fry-1024x576.jpg" />
+      </div>
+      <div class="review" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+        <h2 style="font-size: 250%;">
+        <img class="piepic" src="https://www.shutterstock.com/image-vector/pumpkin-pie-slice-outline-drawing-600nw-2521008339.jpg" height="30px" width="45px" alt="pie">
+        Piece of Cake
+        </h2>
+        <p>"This is fabulous! Very simple to make! Everyone was making 'yum' sounds throughout the whole meal! Thanks for the delicious recipe!"<br /><br /><span class="special">-Naya Pollard</span></p>
+      </div>
+    </div><br />
+
+
+    <!--Grid for reviews-->
+    <div class="feedback">
+
+      <!--Review #6: image and text-->
+      <!--JS: when mouse hovers over and when mouse goes out colors of background and text will change-->
+      <div class="review" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+        <h2 style="font-size: 250%;">
+        <img class="piepic" src="https://www.shutterstock.com/image-vector/pumpkin-pie-slice-outline-drawing-600nw-2521008339.jpg" height="30px" width="45px" alt="pie">
+        Piece of Cake
+        </h2>
+        <p>"Excellent recipe, super simple, and delicious. This is my go-to every time. I changed the serving size and it still turned out amazing!"<br /><br /><span class="special">-Abram Wheeler</span></p>
+      </div>
+      <div>
+        <img class="take" src="https://img.freepik.com/premium-photo/ground-beef-tacos-plate-top-view_268847-3864.jpg" />
+      </div>
+    </div>
+
+
+    <!--Line across the page-->
+    <p id="par"></p>
+
+
+    <!--Header "tab" leave a review-->
+    <h3 class="about">Leave a review</h3>
+
+    <!--Create a form using the get method and action: send submitted form back to your home page in a query string-->
+    <form method="get" action="home page.html">
+
+      <!--Create a group that holds your fields-->
+      <fieldset>
+      <!--Title for group with attributes-->
+      <legend style="font-size: 35px;">Piece of Cake</legend>
+        <!--5 fields below-->
+        <div>
+          <label for="firstname">First Name:</label></div>
+        <div>
+          <input  type="text" name="firstname" required><br /></div>
+        <div>
+          <label for="lastname">Last Name:</label></div>
+        <div>
+          <input  type="text" name="lastname" required><br /></div>
+        <div>
+          <label for="phone">Phone Number:</label></div>
+        <div>
+          <input  type="tele" name="phone" placeholder="xxx-xxx-xxxx"><br /></div>
+        <div>
+          <label for="email">Email address:</label></div>
+        <div>
+          <input  type="email" name="email" placeholder="xxxxxxxx@xxxxx.xxx" required><br /></div>
+        <div>
+          <label for="mess">Leave a Review:</label></div>
+        <div>
+          <textarea name="message" rows="3" cols="35" placeholder="Your Message Here" required></textarea><br /><br /></div>
+
+        <!--2 buttons- to cancel or submit form-->
+        <!--JS: when click on the two buttons the function will execute-->
+        <div>
+          <button onclick="formCancel(event)">Cancel</button>
+          <!--JS: text will be displayed and timer will run and will take away text-->
+          <p id="cancel"></p></div>
+        <div>
+          <button onclick="formSubmit(event, this.form)">Submit</button>
+          <!--JS: text will be displayed and timer will run and will take away text-->
+          <p id="submit"></p></div>
+      </fieldset>
+    </form>
+
+
+    <!--Line across the page-->
+    <p id="par"></p>
+
+    <!--blank big box at end of page-->
+    <p class="end"></p>
+
+    <!--Logo with image and text-->
+    <h2 class="top2 pie">
+        <img src="https://www.shutterstock.com/image-vector/pumpkin-pie-slice-outline-drawing-600nw-2521008339.jpg" height="30px" width="45px" alt="pie">
+        <a href="home page.html">Piece of Cake</a>
+    </h2>
+    
+    <!--copyright symbol with year and company name(logo)-->
+    <p id="copyright"></p>
+      
+
+  </body>
+
+</html>
