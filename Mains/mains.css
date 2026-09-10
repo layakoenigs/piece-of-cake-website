@@ -1,0 +1,252 @@
+/*Sub header that describes page*/
+.sub{
+  font-size:50%; 
+  letter-spacing: 5px; 
+  padding:10px;
+}
+
+/*header of page*/
+.head{
+  letter-spacing: 20px;
+  color: #660000;
+  background-color: whitesmoke;
+  text-align: center;
+  font-size: 270%;
+  border: 15px solid whitesmoke;
+}
+
+/*header "tab" before each section of page*/
+.header{
+  display:inline-block;
+  letter-spacing: 10px;
+  color: whitesmoke;
+  background-color: #660000;
+  text-align: left;
+  font-size: 250%;
+  border: 15px solid #660000;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+/*line across page*/
+.par{
+  border: 5px solid #660000;
+}
+
+/*grid with recipes and images (preview)*/
+.mains{
+  display: inline-grid;
+  width: 95%;
+  grid-template-columns: repeat(4, 22%);
+  letter-spacing: 2px;
+  color: #660000;
+  text-align: center;
+  background-color: whitesmoke;
+  font-size: 115%;
+  border: 15px solid whitesmoke;
+  border-radius: 20px;
+  grid-gap: 35px;
+  margin: 10px;
+}
+
+/*smaller text of recipe name*/
+.diff{
+  font-size:60%;
+}
+
+/*picture of each recipe (preview)*/
+.image{
+  border-radius: 15px;
+  width: 15em;
+  height: 22em;
+}
+
+/*table with dinner meal plan*/
+.table{
+  border-collapse: collapse;
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+/*images in table of meal plan*/
+.image2{
+  width: 12em;
+  height: 17em;
+}
+
+/*table header of meal plan table*/
+.th{
+  font-size: 160%;
+  padding: 35px;
+  background-color: #660000;
+  color: white;
+}
+
+/*table cells of meal plan table*/
+.td{
+  text-align: center;
+  color: #660000;
+  padding: 17px;
+  font-size: 115%;
+}
+
+/*table cells with links of meal plan table*/
+.link{
+  text-decoration: underline;
+  color: #660000;
+}
+
+/*title of table: meat knives*/
+.title{
+  font-size: 250%;
+  text-align: center;
+  color: white;
+  background-color: #660000;
+  padding:60px;
+  letter-spacing: 10px;
+}
+
+/*table of tips with knives*/
+.tab{
+  color: #660000;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+/*tablecells of meat knives*/
+.tablecell2{
+  padding: 20px;
+  font-size: 90%;
+}
+
+/*table with tips*/
+.topic{
+  font-size: 140%;
+}
+
+/*box at end of page*/
+.end{
+  border: 200px solid #660000;
+}
+
+/*grid of recipes- image on right with ingredients on left*/
+.grid{
+  display: inline-grid;
+  width: 100%;
+  grid-template-columns: 40% 60%;
+}
+
+/*table cells- the table with facts about the recipe*/
+.tablecell{
+  border: 1px solid #660000;
+  font-size: 70%;
+  padding: 17px;
+  text-align: center;
+  background-color: whitesmoke;
+  color: #660000;
+}
+
+/*table tag: with facts about the recipe*/
+.rec{
+  width:50%;
+  margin: 30px;
+  border-collapse: collapse;
+  border: 2px solid whitesmoke;
+}
+
+/*recipe picture*/
+.recipes{
+  margin: 22px 0px 10px 30px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+/*box across page with recipe name*/
+.box{
+  border: 30px solid #660000;
+  font-size: 270%;
+  background-color: #660000;
+  letter-spacing: 8px;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/*ingredients and directions of recipe*/
+.ing{
+  width: 80%;
+  letter-spacing: 3px;
+  color: #660000;
+  background-color: whitesmoke;
+  font-size: 115%;
+  border: 20px solid whitesmoke;
+  border-radius: 20px;
+  grid-gap: 30px;
+  padding: 15px;
+  margin: 20px;
+  line-height: 30px;
+}
+
+/*ingredients and directions: size*/
+.ingredients{
+  font-size: 200%;
+}
+
+/*pictures in the grid (quick and easy suppers)*/
+.tableimage{
+  border-radius: 15px;
+  width: 22em;
+  height: 30em;
+  padding: 5px;
+}
+
+/*hover over every .a tag*/
+.a:hover{
+  text-decoration: underline;
+  color: #660000;
+}
+
+/*change the following if the screen size is smaller*/
+@media only screen and (max-width: 700px){
+
+   /*header of page*/
+  .head{
+    font-size: 200%;
+  }
+
+  /*grid with recipes and images (preview)*/
+  .mains{
+    width: 95%;
+    grid-template-columns: repeat(2, 47%);
+    font-size: 95%;
+  }
+
+
+  /*smaller text of recipe name*/
+  .diff{
+    font-size:55%;
+  }
+
+  /*picture of each recipe (preview)*/
+  .image{
+    width: 100%;
+    height: 85%;
+  }
+
+  /*grid of recipes- image on right with ingredients on left*/
+  .grid{
+    display: block;
+  }
+
+  /*ingredients and directions of recipe*/
+  .ing{
+  font-size: 85%;
+  }
+
+  /*cells of table*/
+  .tablecell2{
+    font-size: 100%;
+  }
+
+
+}

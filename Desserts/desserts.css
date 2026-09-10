@@ -1,0 +1,242 @@
+/*Sub header that describes page*/
+.sub{
+  font-size:50%; 
+  letter-spacing: 5px; 
+  padding:10px;
+}
+
+/*header of page*/
+.head{
+  letter-spacing: 20px;
+  color: #522081;
+  background-color: whitesmoke;
+  font-size: 270%;
+  text-align: center;
+  border: 15px solid whitesmoke;
+}
+
+/*header "tab" before each section of page*/
+.header{
+  display:inline-block;
+  letter-spacing: 10px;
+  color: whitesmoke;
+  background-color: #522081;
+  text-align:left;
+  font-size: 250%;
+  border: 15px solid #522081;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+/*line across page*/
+.par{
+  border: 5px solid #522081;
+}
+
+/*grid with recipes and images (preview)*/
+.desserts{
+  display: inline-grid;
+  width: 95%;
+  grid-template-columns: repeat(4,22%);
+  letter-spacing: 2px;
+  color: #522081;
+  background-color: whitesmoke;
+  font-size: 115%;
+  border: 15px solid whitesmoke;
+  text-align: center;
+  border-radius: 20px;
+  grid-gap: 35px;
+  margin: 10px;
+}
+
+/*picture of each recipe (preview)*/
+.pic{
+  border-radius: 15px;
+  width: 15em;
+  height: 22em;
+}
+
+/*smaller text of recipe name*/
+.diff{
+  font-size:60%;
+}
+
+/*table with tips*/
+.table{
+  color: #522081;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+/*cells of table*/
+.tablecell2{
+  padding: 25px;
+  font-size: 90%;
+}
+
+/*title a cell in the table*/
+.topic{
+  font-size: 140%;
+}
+
+/*title of the table*/
+.title{
+  font-size: 250%;
+  text-align: center;
+  color: white;
+  background-color: #522081;
+  padding:60px;
+  letter-spacing: 10px;
+}
+
+/*box at end of page*/
+.end{
+  border: 200px solid #522081;
+}
+
+/*grid of recipes- image on right with ingredients on left*/
+.grid{
+  display: inline-grid;
+  width: 100%;
+  grid-template-columns: 40% 60%;
+}
+
+/*table cells- the table with facts about the recipe*/
+.tablecell{
+  border: 1px solid #522081;
+  font-size: 70%;
+  padding: 17px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+/*table tag: with facts about the recipe*/
+.rec{
+  width:50%;
+  margin: 30px;
+  border-collapse: collapse;
+  border: 2px solid whitesmoke;
+}
+
+/*ingredients and directions of recipe*/
+.ing{
+  width: 80%;
+  letter-spacing: 3px;
+  color: #522081;
+  background-color: whitesmoke;
+  font-size: 115%;
+  border: 20px solid whitesmoke;
+  border-radius: 20px;
+  grid-gap: 35px;
+  padding: 15px;
+  margin: 20px;
+  line-height: 30px;
+}
+
+/*box across page with recipe name*/
+.box{
+  border: 30px solid #522081;
+  font-size: 270%;
+  background-color: #522081;
+  letter-spacing: 8px;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/*ingredients and directions: size*/
+.ingredients{
+  font-size: 200%;
+}
+
+/*recipe picture*/
+.recipes{
+  margin: 22px 0px 10px 30px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+/*on decadent page: grid of styling tips*/
+.baking{
+  display: inline-grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+}
+
+/*pictures in the grid of styling tips*/
+.tablepic{
+  border-radius: 15px;
+  width: 35em;
+  height: 22em;
+  padding: 5px;
+  margin: 20px 0px 0px 20px;
+}
+
+/*hover over every .a tag*/
+.a:hover{
+  text-decoration: underline;
+  color: #522081;
+}
+
+/*videos grid-side by side*/
+.vids{
+  display: grid; 
+  grid-template-columns: repeat(2, 50%); 
+  margin: 30px;
+}
+
+/*change the following if the screen size is smaller*/
+@media only screen and (max-width: 700px){
+
+   /*header of page*/
+  .head{
+    font-size: 200%;
+  }
+
+  /*grid with recipes and images (preview)*/
+  .desserts{
+    width: 95%;
+    grid-template-columns: repeat(2, 47%);
+    font-size: 95%;
+  }
+
+
+  /*smaller text of recipe name*/
+  .diff{
+    font-size:55%;
+  }
+
+  /*picture of each recipe (preview)*/
+  .pic{
+    width: 100%;
+    height: 85%;
+  }
+
+  /*grid of recipes- image on right with ingredients on left*/
+  .grid{
+    display: block;
+  }
+
+  /*ingredients and directions of recipe*/
+  .ing{
+  font-size: 85%;
+  }
+
+
+  /*cells of table*/
+  .tablecell2{
+    font-size: 100%;
+  }
+
+  /*on decadent page: grid of styling tips*/
+  .baking{
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  /*videos grid-side by side*/
+  .vids{
+    grid-template-columns: 1fr; 
+    grid-gap: 15px;
+  }
+}

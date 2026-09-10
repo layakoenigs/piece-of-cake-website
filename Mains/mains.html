@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Main Dishes</title>
+    <link href="../csstermproject.css" rel="stylesheet" />
+    <link href="mains.css" rel="stylesheet" />
+    <script src="../website.js" defer></script>
+
+  </head>
+
+  <body>
+
+    <!--Navigation bar as a grid-->
+    <div class="top">
+
+      <!--Logo (pic with name) for website-->
+    <h2 class="top2 pie">
+        <img src="https://www.shutterstock.com/image-vector/pumpkin-pie-slice-outline-drawing-600nw-2521008339.jpg" height="30px" width="45px" alt="pie">
+        <a href="../home page.html" style="text-decoration: none; color:#333333;">Piece of Cake</a>
+      </h2>
+
+      <!--4 main pages as links-->
+      <a href="../Appetizers/appetizers.html" class="header2">Appetizers</a>
+      <a href="mains.html" class="header2">Mains</a>
+      <a href="../Sides/sides.html" class="header2">Sides</a>
+      <a href="../Desserts/desserts.html" class="header2">Desserts</a>  
+    </div>
+
+    <!--Line across the page-->
+    <p class="par"></p>
+
+    <!--Header of main page-->
+    <div class="head">
+      <h1>Mains</h1>
+
+      <!--Sub header that describes what the page is about-->
+      <p class="sub">Savor our signature main courses, where the finest seasonal ingredients blend classic techniques with innovative flair. </p>
+    </div>
+
+    <!--Line across the page-->
+    <p class="par"></p>
+
+
+    <!--Header "tab" for Chicken-->
+    <!--JS: when mouse hovers over and when mouse goes out colors will change-->
+    <a href="chicken.html"><h3 class="header" onmouseover="mainTag(this)" onmouseout="fixMain(this)">Chicken</h3></a><br />
+    
+
+
+    <!--Grid that displays four recipes in the chicken section-->
+    <div class="mains">
+
+      <!--Chicken #1: Link to the actual recipe page-->
+      <div>
+        <a class="a" href="chicken.html#chicken1"><img class="image" src="https://www.dinneratthezoo.com/wp-content/uploads/2017/10/firecracker-chicken-4.jpg" />
+        <p style="color: #660000;">firecracker chicken<br /><span class="diff">sweet and spicy</span></p></a>
+      </div>
+
+      <!--Chicken #2: Link to the actual recipe page-->
+      <div>
+        <a class="a" href="chicken.html#chicken4"><img class="image" src="https://pinchmegood.com/wp-content/uploads/2022/04/IMG_8618-1391x2048.jpg" />
+        <p style="color: #660000;">Crispy Chicken Cutlets<br /><span class="diff">oven baked</span></p></a>
+      </div>
+
+      <!--Chicken #3: Link to the actual recipe page-->
+      <div>
+        <a class="a" href="chicken.html#chicken2"><img class="image" src="https://www.dinneratthezoo.com/wp-content/uploads/2019/12/honey-garlic-chicken-stir-fry-final-1.jpg" />
+        <p style="color: #660000;">Honey Garlic Chicken<br /><span class="diff">stir fry</span></p></a>
+      </div>
+
+      <!--Chicken #4: Link to the actual recipe page-->
+      <div>
+        <a class="a" href="chicken.html#chicken3"><img class="image" src="https://www.spendwithpennies.com/wp-content/uploads/2024/10/1200-Baked-Chicken-Thighs-3-SpendWithPennies.jpg"/>
+        <p style="color: #660000;">Baked chicken<br /><span class="diff">with a glaze</span></p> </a>
+      </div>
+    </div>
+
+
+    <!--Line across the page-->
+    <p class="par"></p>
+
+
+    <!--Header "tab" for Meat-->
+    <!--JS: when mouse hovers over and when mouse goes out colors will change-->
+    <a href="meat.html"><h3 class="header" onmouseover="mainTag(this)" onmouseout="fixMain(this)">Meat</h3></a>
+
+
+
+
+    <!--Grid that displays four recipes in the meat section-->
+    <div class="mains">
+
+      <!--Meat #1: Link to the actual recipe page-->
+      <div>
+        <a class="a" href="meat.html#meat1"><img class="image" src="https://www.spendwithpennies.com/wp-content/uploads/2022/08/1200-Perfect-Ribeye-Steak-SpendWithPennies.jpg"/>
+        <p style="color: #660000;">Perfect Ribeye Steaks<br /><span class="diff">Great on the grill</span></p></a>
+      </div>
+
+      <!--Meat #2: Link to the actual recipe page-->
+      <div>
+        <a class="a" href="meat.html#meat3"><img class="image" src="https://www.dinneratthezoo.com/wp-content/uploads/2018/06/pepper-steak-3.jpg"/>
+        <p style="color: #660000;">Pepper Steak<br /><span class="diff">with peppers</span></p> </a>
+      </div>
+
+      <!--Meat #3: Link to the actual recipe page-->
+      <div>
+        <a class="a" href="meat.html#meat2"><img class="image" src="https://cdn.betweencarpools.com/wp-content/uploads/2024/03/3Q6A2344e-small.jpg.webp"/>
+        <p style="color: #660000;">best meat pizza<br /><span class="diff">pastrami and facon</span></p></a>
+      </div>
+
+      <!--Meat #4: Link to the actual recipe page-->
+      <div>
+        <a class="a" href="meat.html#meat4"><img class="image" src="https://www.dinneratthezoo.com/wp-content/uploads/2017/10/beef-and-broccoli-stir-fry-14.jpg"/>
+        <p style="color: #660000;">savory beef and broccoli<br /><span class="diff">stir fry</span></p></a>
+      </div>
+    </div>
+
+
+    <!--Line across the page-->
+    <p class="par"></p>
+
+
+    <!--Table for dinner plan-->
+    <table class="table">
+
+      <!--Table row for title of table-->
+      <tr>
+        <th colspan="5" style="font-size: 50px;background-color:#660000; color: white; padding: 25px;">Dinner Meal Plan</th>
+      </tr>
+
+      <!--Day of week with images and text of dinner plan-->
+      <tr>
+        <th class="th">S<br/>u<br/>n<br/>d<br/>a<br />y</th>
+        <td class="td"><img class="image2" src="https://feelgoodfoodie.net/wp-content/uploads/2020/12/One-Pan-Chicken-and-Potatoes-5.jpg"/></td>
+        <td class="td"><img class="image2" src="https://www.savorynothings.com/wp-content/uploads/2017/10/green-beans-image-3.jpg"  /></td>
+        <td class="td" colspan="2">A meal of chicken and potatoes with a side of green beans<br /><br />Click here:
+          <a href="https://www.cucinabyelena.com/baked-chicken-and-potatoes-recipe-one-pan/" target="_blank" class="link">Chicken and Potatoes</a><br />
+          <a href="https://www.recipetineats.com/garlic-sauteed-green-beans/" target="_blank" class="link">Green beans</a>
+        </td>
+      </tr>
+
+      <!--Day of week with images and text of dinner plan-->
+      <tr>
+        <th class="th">M<br/>o<br />n<br/>d<br/>a<br />y</th>
+        <td class="td"><img class="image2" src="https://i0.wp.com/iatethewholething.com/wp-content/uploads/2016/06/spaghetti-meatballs-5.jpg?fit=1568%2C2358&ssl=1" width="180px"/></td>
+        <td class="td"><img class="image2" src="https://www.recipegirl.com/wp-content/uploads/2007/02/Grilled-Vegetable-Salad-1.jpg"/></td>
+        <td class="td" colspan="2">spaghetti and meatballs served with grilled vegetables<br /><br />Click here:
+          <a href="https://iatethewholething.com/the-best-damn-spaghetti-meatballs-period/" target="_blank" class="link"> Meatballs and Spaghetti</a><br />
+          <a href="https://playswellwithbutter.com/grilled-vegetable-salad/" target="_blank" class="link">Grilled Vegetables</a>
+        </td>
+      </tr>
+
+      <!--Day of week with images and text of dinner plan-->
+      <tr>
+        <th class="th">T<br/>u<br/>e<br/>s<br/>d<br/>a<br />y</th>
+        <td class="td"><img class="image2" src="https://easyweeknightrecipes.com/wp-content/uploads/2020/06/Baked-Ziti-8.jpg" /></td>
+        <td class="td"><img class="image2" src="https://www.dinneratthezoo.com/wp-content/uploads/2019/05/baked-salmon-4.jpg" /></td>
+        <td class="td" colspan="2">Milchig supper featuring hearty baked ziti alongside flaky salmon<br /><br />Click here:
+          <a href="https://www.allrecipes.com/recipe/11758/baked-ziti-i/" target="_blank" class="link">Baked Ziti</a><br />
+          <a href="https://www.recipetineats.com/garlic-butter-salmon-recipe/" target="_blank" class="link">Garlic Butter Salmon</a>
+        </td>
+      </tr>
+
+      <!--Day of week with images and text of dinner plan-->
+      <tr>
+        <th class="th">W<br/>e<br/>d<br />n<br />e<br />s<br/>d<br/>a<br />y</th>
+        <td class="td"><img class="image2" src="https://www.recipetineats.com/tachyon/2015/12/Chinese-Beef-Stir-Fry_8.jpg" /></td>
+        <td class="td"><img class="image2" src="https://40aprons.com/wp-content/uploads/2020/04/rice-pilaf-9.jpg" /></td>
+        <td class="td" colspan="2">tender strips of pepper steak served alongside rice pilaf<br /><br />Click here:
+          <a href="https://www.browneyedbaker.com/pepper-steak-stir-fry/" target="_blank" class="link">Pepper Steak Stir Fry</a><br />
+          <a href="https://www.allrecipes.com/recipe/203951/sarahs-rice-pilaf/" target="_blank" class="link">Rice Pilaf</a>
+        </td>
+      </tr>
+
+      <!--Day of week with images and text of dinner plan-->
+      <tr>
+        <th class="th">T<br/>h<br/>u<br/>r<br/>s<br/>d<br/>a<br />y</th>
+        <td class="td"><img class="image2" src="https://www.peanutblossom.com/wp-content/uploads/2022/07/cheesepizza-feature-1.jpg" /></td>
+        <td class="td"><img class="image2" src="https://thecleaneatingcouple.com/wp-content/uploads/2019/05/healthy-french-fries-1.jpg" /></td>
+        <td class="td" colspan="2">piping hot pizza alongside a side of crispy french fries<br /><br />Click here:
+          <a href="https://www.piesnfriesny.com/" target="_blank" class="link">Pizza Pie</a><br />
+          <a href="https://www.piesnfriesny.com/" target="_blank" class="link">French Fries</a>
+        </td>
+      </tr>   
+    </table>
+
+
+    <!--Line across the page-->
+    <p class="par"></p>
+
+    <!--blank big box at end of page-->
+    <p class="end"></p>
+
+    <!--Logo with image and text-->
+    <h2 class="top2 pie">
+        <img src="https://www.shutterstock.com/image-vector/pumpkin-pie-slice-outline-drawing-600nw-2521008339.jpg" height="30px" width="45px" alt="pie">
+        <a href="../home page.html">Piece of Cake</a>
+    </h2>
+
+  </body>
+
+</html>
